@@ -1,12 +1,9 @@
 # CSI-API-HacktoberFest-2023
 
-
-# NOTESAPP HACKTOBERFEST 2023
-
 ## Built With
 
-- [React js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com/)
+- Node.js
+- Express.js
 
 
 ## Prerequisites
