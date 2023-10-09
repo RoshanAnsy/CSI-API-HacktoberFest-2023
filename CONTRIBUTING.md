@@ -76,7 +76,7 @@ git push origin main
 
 - If you have questions or need support related to your contributions or the project, feel free to tag and ask your doubts to the repository maintainer.
 
-- Thank you for contributing to Tourism-Blog-HacktoberFest-2023! Your contributions are greatly appreciated.
+- Thank you for contributing to CSI-API-HacktoberFest-2023! Your contributions are greatly appreciated.
 
 <br/>
 
