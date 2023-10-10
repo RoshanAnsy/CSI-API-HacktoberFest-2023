@@ -1,5 +1,8 @@
 # CSI-API-HacktoberFest-2023
 
+## Maintainers
+[Parth Chilap](https://github.com/chillupparth) && [Vighnesh Manjrekar](https://github.com/VighneshManjrekar)
+
 ## Built With
 
 - Node.js
