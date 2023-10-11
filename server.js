@@ -4,6 +4,6 @@ const port = process.env.PORT || 8000;
 const productsRouter = require("./routes/products");
 
 app.get("/", (req, res) => res.send("Hello World!"));
-app.use("/", productsRouter);
+app.use("/products", productsRouter);
 
 app.listen(port, () => console.log(`http://localhost:${port}`));
