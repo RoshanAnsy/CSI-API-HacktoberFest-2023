@@ -1,5 +1,5 @@
 
-const Products=require("../DataHouse/Products.json")
+const Products=require("../data/Products.json")
 
 exports.getAllProduct=async(req,res)=>{
     try{
