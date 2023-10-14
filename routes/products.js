@@ -5,18 +5,17 @@ const Products = require("../Products.json");
 router.get("/", async(req, res) => {
   try{
 
-  
-    const {minPrice,maxPrice}=req.body
+    // const {minPrice,maxPrice}=req.body
+    let minPrice=req.query.minPrice
+    let maxPrice=req.query.maxPrice
     let ans=[]
     for(let i=0;i<Products.length; i++){
-      if(minPrice < Products[i].price && Products[i].price < maxPrice){
+      if(minPrice < Products[i].price && Products[i].price < maxPrice ){
         ans.push(Products[i]);
       }
-      
-        
     }
     res.status(200).json({
-      message:`All product are here bt ${minPrice} and ${maxPrice} `,
+      message:`All product are here bt ${minPrice}  `,
       success:true,
       ans,
     })
@@ -28,7 +27,6 @@ router.get("/", async(req, res) => {
       error:error.message,
     })
   }
-  
 });
 
 module.exports = router;
