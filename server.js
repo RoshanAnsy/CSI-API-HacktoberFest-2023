@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT || 8000;
-const productsRouter = require("./routes/products");
+const productsRouter = require("./routes/productRoutes")
 const bodyParser = require("body-parser");
 
 app.get("/", (req, res) => res.send("Hello World!"));
