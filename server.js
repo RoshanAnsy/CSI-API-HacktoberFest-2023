@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port =  8000;
-const productsRouter = require("./routes/productRoutes")
+const productsRouter = require("./routes/products")
 
 app.get("/", (req, res) => res.send("Hello World!"));
 app.use("/products", productsRouter);
