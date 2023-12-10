@@ -3,16 +3,11 @@ const Products=require("../data/Products.json")
 exports.getAllProduct=async(req,res)=>{
   try{
       let {minPrice,maxPrice}=req.query
-      let ans=[]
-      for(let i=0;i<Products.length; i++){
-        if(minPrice < Products[i].price && Products[i].price < maxPrice ){
-          ans.push(Products[i]);
-        }
-      }
+      const result=Products.filter((price)=>price>=minPrice && maxPrice<=price)
       res.status(200).json({
         message:`All product are here bt price ${minPrice}$ and ${maxPrice}$ `,
         success:true,
-        ans,
+        result,
       })
     }
   catch(error){
